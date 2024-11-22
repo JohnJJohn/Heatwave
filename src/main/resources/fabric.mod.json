@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "heatwave",
+	"version": "${version}",
+	"name": "HeatWave",
+	"description": "This mod adds power armor powered by heat",
+	"authors": [
+		"John John"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/heatwave/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.heatwave.HeatWave"
+		],
+		"fabric-datagen": [
+			"com.heatwave.HeatWaveDataGenerator"
+		],
+		"client": [
+			"com.heatwave.HeatWaveClient"
+		]
+	},
+	"mixins": [
+		"heatwave.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
